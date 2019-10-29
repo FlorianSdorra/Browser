@@ -35,8 +35,9 @@ ul.setAttributeNode(cardDeck);
 for (let i = 0; i < books.length; i++) {
     let li = document.createElement("li");
     li.className = "card book mb-3";
-    li.innerHTML = `<img class="card-img-top book-cover" src="${books[i].img}" alt="Card image cap">
-    <div class="card-body">
+    li.innerHTML =
+        `<img class="card-img-top book-cover img-fluid" src="${books[i].img}">
+        <div class="card-body">
         <h5 class="card-title">${books[i].title}</h5>
         <p class="card-text">${books[i].author}</p>
         <a href="#" class="btn btn-primary"></a>`;
