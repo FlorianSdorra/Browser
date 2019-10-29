@@ -14,20 +14,21 @@ for (var i = 0; i < cat.length; i++) {
 let foodCat = document.getElementsByClassName("food-category");
 
 for (var j = 0; j < foodCat.length; j++) {
-    foodCat[j].style.backgroundColor = `rgb(${getRan()},${getRan()},${getRan()})`;
+    foodCat[j].style.backgroundColor = `rgba(${getRan()},${getRan()},${getRan()},${getTran()})`;
 };
 
 function getRan() {
     return Math.floor(Math.random() * 255);
-}
+};
 
+function getTran() {
+    return Math.random();
+};
 
+//flex main container
 
-// function get_rand_color()
-// {
-//     var color = Math.floor(Math.random() * Math.pow(256, 3)).toString(16);
-//     while(color.length < 6) {
-//         color = "0" + color;
-//     }
-//     return "#" + color;
-// }
+const mainSection = document.querySelector(".main");
+mainSection.style.display = "flex";
+mainSection.style.flexFlow = "row wrap";
+mainSection.style.justifyContent = "space-around";
+mainSection.style.width = "33%";
