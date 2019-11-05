@@ -49,26 +49,28 @@ li {
     border: 1px solid #888;
     width: 70%;
 }
+
 .modal-content p {
     text-align: center;
 }
+
 .modal-close {
     float: right;
     font-size: 28px;
-    font-weight: bold;  
+    font-weight: bold;
 }
 
-.modal-close:hover, .modal-close:focus {
+.modal-close:hover,
+.modal-close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
 }
 
 .teapot {
-  transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .teapot-rotate {
     transform: rotate(20deg);
 }
-
